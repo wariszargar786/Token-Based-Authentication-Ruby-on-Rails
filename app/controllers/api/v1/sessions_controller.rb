@@ -3,9 +3,9 @@ class Api::V1::SessionsController < Devise::SessionsController
   before_action :load_user, only: :create
   def create
     if @user.valid_password?(sessions_params[:password])
-      json_response "Login Successful" , true,{user:@user},:ok
+      json_response "Login Successful" , true, {user:@user}, :ok
     else
-      json_response "Un-Authorized",false ,{},:unauthorize
+      json_response "Un-Authorized", false, {} ,:unauthorized
     end
   end
 
@@ -18,7 +18,7 @@ class Api::V1::SessionsController < Devise::SessionsController
     if @user
       return  @user
     else
-      json_response "User not found", false , {}, :failuer
+      json_response "User not found", false , {}, :not_found
     end
   end
 end
