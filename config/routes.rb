@@ -1,4 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  namespace :api, defaults: { format: JSON } do
+    namespace :v1 do
+      devise_scope :user do
+        post 'register', to: 'registrations#create'
+      end
+    end
+  end
 end
