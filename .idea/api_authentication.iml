@@ -39,12 +39,14 @@
     <orderEntry type="library" scope="PROVIDED" name="activerecord (v6.1.1, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activestorage (v6.1.1, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="activesupport (v6.1.1, ruby-2.7.2-p137) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.16, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootsnap (v1.5.1, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="builder (v3.2.4, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bundler (v2.2.2, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="byebug (v11.1.3, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.1.7, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, ruby-2.7.2-p137) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="devise (v4.7.3, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.10.0, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.4.2, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.8.7, ruby-2.7.2-p137) [gem]" level="application" />
@@ -58,6 +60,7 @@
     <orderEntry type="library" scope="PROVIDED" name="msgpack (v1.3.3, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nio4r (v2.5.4, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.11.1, ruby-2.7.2-p137) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.5.0, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v1.2.3, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="puma (v5.1.1, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="racc (v1.5.2, ruby-2.7.2-p137) [gem]" level="application" />
@@ -68,11 +71,13 @@
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.3.0, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v6.1.1, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.0.3, ruby-2.7.2-p137) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="responders (v3.0.1, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v4.0.2, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.2.2, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="thor (v1.0.1, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo (v2.0.4, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="tzinfo-data (v1.2020.6, ruby-2.7.2-p137) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="warden (v1.2.9, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-driver (v0.7.3, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="websocket-extensions (v0.1.5, ruby-2.7.2-p137) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="zeitwerk (v2.4.2, ruby-2.7.2-p137) [gem]" level="application" />
@@ -84,76 +89,90 @@
   <component name="RailsGeneratorsCache">
     <option name="generators">
       <list>
+        <option value="active_record:application_record" />
+        <option value="active_record:devise" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
-        <option value="active_record:observer" />
-        <option value="active_record:session_migration" />
+        <option value="application_record" />
+        <option value="benchmark" />
+        <option value="channel" />
         <option value="controller" />
-        <option value="erb:controller" />
-        <option value="erb:mailer" />
-        <option value="erb:scaffold" />
+        <option value="devise" />
+        <option value="devise:controllers" />
+        <option value="devise:install" />
+        <option value="devise:views" />
         <option value="generator" />
-        <option value="helper" />
         <option value="integration_test" />
+        <option value="job" />
+        <option value="mailbox" />
         <option value="mailer" />
-        <option value="metal" />
         <option value="migration" />
         <option value="model" />
-        <option value="model_subclass" />
-        <option value="observer" />
-        <option value="performance_test" />
-        <option value="plugin" />
+        <option value="mongoid:devise" />
         <option value="resource" />
+        <option value="responders:install" />
+        <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="session_migration" />
-        <option value="stylesheets" />
+        <option value="system_test" />
+        <option value="task" />
+        <option value="test_unit:channel" />
         <option value="test_unit:controller" />
+        <option value="test_unit:generator" />
         <option value="test_unit:helper" />
+        <option value="test_unit:install" />
         <option value="test_unit:integration" />
+        <option value="test_unit:job" />
+        <option value="test_unit:mailbox" />
         <option value="test_unit:mailer" />
         <option value="test_unit:model" />
-        <option value="test_unit:observer" />
-        <option value="test_unit:performance" />
         <option value="test_unit:plugin" />
         <option value="test_unit:scaffold" />
+        <option value="test_unit:system" />
       </list>
     </option>
     <option name="myGenerators">
       <list>
+        <option value="active_record:application_record" />
+        <option value="active_record:devise" />
         <option value="active_record:migration" />
         <option value="active_record:model" />
-        <option value="active_record:observer" />
-        <option value="active_record:session_migration" />
+        <option value="application_record" />
+        <option value="benchmark" />
+        <option value="channel" />
         <option value="controller" />
-        <option value="erb:controller" />
-        <option value="erb:mailer" />
-        <option value="erb:scaffold" />
+        <option value="devise" />
+        <option value="devise:controllers" />
+        <option value="devise:install" />
+        <option value="devise:views" />
         <option value="generator" />
-        <option value="helper" />
         <option value="integration_test" />
+        <option value="job" />
+        <option value="mailbox" />
         <option value="mailer" />
-        <option value="metal" />
         <option value="migration" />
         <option value="model" />
-        <option value="model_subclass" />
-        <option value="observer" />
-        <option value="performance_test" />
-        <option value="plugin" />
+        <option value="mongoid:devise" />
         <option value="resource" />
+        <option value="responders:install" />
+        <option value="responders_controller" />
         <option value="scaffold" />
         <option value="scaffold_controller" />
-        <option value="session_migration" />
-        <option value="stylesheets" />
+        <option value="system_test" />
+        <option value="task" />
+        <option value="test_unit:channel" />
         <option value="test_unit:controller" />
+        <option value="test_unit:generator" />
         <option value="test_unit:helper" />
+        <option value="test_unit:install" />
         <option value="test_unit:integration" />
+        <option value="test_unit:job" />
+        <option value="test_unit:mailbox" />
         <option value="test_unit:mailer" />
         <option value="test_unit:model" />
-        <option value="test_unit:observer" />
-        <option value="test_unit:performance" />
         <option value="test_unit:plugin" />
         <option value="test_unit:scaffold" />
+        <option value="test_unit:system" />
       </list>
     </option>
   </component>
